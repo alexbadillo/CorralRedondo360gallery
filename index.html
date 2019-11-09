@@ -16,10 +16,10 @@
         <img id="low" crossorigin="anonymous" src="assets/low.jpg">
         <img id="med" crossorigin="anonymous" src='assets/med.jpg'>
         <img id="high" crossorigin="anonymous" src='assets/high.jpg'>
+        <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
         <img id="low-thumb" crossorigin="anonymous" src="assets/lowelevation.png">
         <img id="med-thumb" crossorigin="anonymous" src='assets/medelevation.png'>
         <img id="high-thumb" crossorigin="anonymous" src='assets/highelevation.png'>
-        <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
 
         <!-- Image link template to be reused. -->
         <script id="link" type="text/html">
@@ -40,7 +40,7 @@
              animation__fadeback="property: components.material.material.color; type: color; from: #000; to: #FFF; dur: 300; startEvents: animationcomplete__fade"></a-sky>
 
       <!-- Image links. -->
-      <a-entity id="links" layout="type: line; margin: 1.5" position="0 -1 -4">
+      <a-entity id="links" layout="type: line; margin: 1.5" position="0 0 -2">
         <a-entity template="src: #link" data-src="#low" data-thumb="#low-thumb"></a-entity>
         <a-entity template="src: #link" data-src="#med" data-thumb="#med-thumb"></a-entity>
         <a-entity template="src: #link" data-src="#high" data-thumb="#high-thumb"></a-entity>
